@@ -201,7 +201,10 @@ La clase `sr-only` (screen reader only) implementa un patrón crucial:
 <h3 id="contact-form-title" class="sr-only">Contact form</h3>
 ```
 
-Este encabezado proporciona estructura semántica al formulario sin añadir elemento visual. ¿Por qué es importante? Los formularios deben tener encabezados para que usuarios de lectores de pantalla entiendan el contexto cuando el lector anuncia campos de formulario. Sin embargo, agregar un encabezado visual puede ser redundante o romper el diseño deseado.
+Este encabezado proporciona estructura semántica al formulario sin añadir elemento visual.
+
+¿Por qué es importante?
+Los formularios deben tener encabezados para que usuarios de lectores de pantalla entiendan el contexto cuando el lector anuncia campos de formulario. Sin embargo, agregar un encabezado visual puede ser redundante o romper el diseño deseado.
 
 La implementación típica de sr-only usa CSS para posicionar el elemento fuera de la pantalla y reducir su tamaño a un pixel mientras mantiene su accesibilidad para tecnologías asistivas. Tailwind proporciona esta utilidad por defecto.
 
