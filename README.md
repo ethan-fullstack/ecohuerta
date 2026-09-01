@@ -80,7 +80,7 @@ if (saved === 'dark' || (!saved && prefersDark)) {
 }
 ```
 
-Este código se ejecuta sincrónicamente antes de que el navegador renderice el body. La sincronicidad es crucial. Si este código estuviera en un script al final del body o en un event listener de DOMContentLoaded, existiría una ventana de tiempo donde la página se renderizaría en modo claro antes de cambiar a oscuro. El usuario vería un flash blanco, una experiencia jarring particularmente notoria en ambientes con poca luz.
+Este código se ejecuta sincrónicamente antes de que el navegador renderice el body. La sincronización es crucial. Si este código estuviera en un script al final del body o en un event listener de DOMContentLoaded, existiría una ventana de tiempo donde la página se renderizaría en modo claro antes de cambiar a oscuro. El usuario vería un flash blanco, una experiencia jarring particularmente notoria en ambientes con poca luz.
 
 Al colocar el script inline en el head, se garantiza que la clase dark esté presente antes del primer paint del navegador. El navegador procesa el HTML secuencialmente, ejecuta el script, agrega la clase si es necesario, y luego comienza a renderizar con el tema correcto ya aplicado.
 
