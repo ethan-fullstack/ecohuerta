@@ -1,3 +1,7 @@
+## Aprendizaje
+
+Este proyecto permite aplicar conceptos de colaboración mediante Git y GitHub, trabajando con ramas, commits, forks y pull requests.
+
 # Guía Técnica: Arquitectura Web Moderna con Tailwind CSS v4
 
 ## Introducción al Proyecto
