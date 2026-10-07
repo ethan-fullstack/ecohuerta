@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>EcoHuerta — Sustainable Crops & Learning</title>
+    <title>EcoHuerta-Cultivos sostenibles y aprendizaje</title>
     <meta
       name="description"
-      content="EcoHuerta: learn sustainable crops, seasons, and best practices. Built with Tailwind CSS v4 (CDN) to demonstrate utility-first."
+      content="EcoHuerta: aprende sobre cultivos sostenibles, temporadas y buenas prácticas para cuidar el medio ambiente."
     />
 
     <!-- Tailwind v4 Play CDN (official) -->
@@ -36,13 +36,13 @@
         --color-eco-100: oklch(0.94 0.03 150);
         --color-eco-200: oklch(0.88 0.05 150);
         --color-eco-300: oklch(0.82 0.08 150);
-        --color-eco-500: oklch(0.7 0.12 150);
-        --color-eco-600: oklch(0.62 0.12 150);
-        --color-eco-700: oklch(0.54 0.11 150);
+        --color-eco-500: oklch(0.72 0.15 145);
+        --color-eco-600: oklch(0.62 0.15 145);
+        --color-eco-700: oklch(0.52 0.14 145);
 
         /* Accent (earthy amber) */
-        --color-earth-400: oklch(0.78 0.1 80);
-        --color-earth-600: oklch(0.58 0.11 80);
+        --color-earth-400: oklch(0.82 0.12 75);
+        --color-earth-600: oklch(0.60 0.13 70);
 
         /* Neutral surfaces tuned for contrast in light/dark */
         --color-surface: oklch(0.99 0 0);
@@ -90,9 +90,10 @@
         }
 
         /* Card */
-        .card {
-          @apply rounded-xl bg-white/90 dark:bg-white/5 backdrop-blur shadow ring-1 ring-black/5 p-6;
-        }
+      
+       .card {
+           @apply rounded-2xl bg-eco-700 text-white shadow-lg ring-1 ring-eco-500 p-6;
+        }  
         .card-hover {
           @apply transition hover:shadow-lg hover:-translate-y-0.5;
         }
@@ -146,116 +147,126 @@
 
   <!-- Use semantic landmarks and good contrast defaults -->
   <body
-    class="font-sans bg-surface text-ink dark:bg-surface dark:text-ink min-h-dvh selection:bg-eco-200/60 selection:text-ink"
+    class="font-sans bg-surface text-ink dark:bg-eco-50 dark:text-eco-700 min-h-dvh selection:bg-eco-200/60 selection:text-ink"
   >
     <!-- =======================
          HEADER / NAVBAR
          ======================= -->
-    <header
-      class="sticky top-0 z-50 bg-surface/80 backdrop-blur border-b border-black/5"
-    >
-      <nav
-        class="max-w-screen-xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between"
-      >
-        <a
-          class="flex items-center gap-3"
-          href="#home"
-          aria-label="EcoHuerta home"
-        >
-          <span
-            class="inline-flex h-9 w-9 items-center justify-center rounded-md bg-eco-600 text-white"
-          >
-            <i class="fa-solid fa-seedling" aria-hidden="true"></i>
-          </span>
-          <span class="text-lg font-semibold">EcoHuerta</span>
-        </a>
+   <header
+  class="sticky top-0 z-50 bg-surface/80 backdrop-blur border-b border-black/5"
+>
+  <nav
+    class="max-w-screen-xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between"
+  >
+    <div class="flex items-center gap-6">
 
-        <button
-          id="themeToggle"
-          class="btn btn-ghost"
-          type="button"
-          aria-pressed="false"
-          aria-label="Toggle dark mode"
+      <a
+        class="flex items-center gap-3"
+        href="#home"
+        aria-label="EcoHuerta home"
+      >
+        <span
+          class="inline-flex h-9 w-9 items-center justify-center rounded-md bg-eco-600 text-white"
         >
-          <i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i>
-          Theme
-        </button>
-      </nav>
-    </header>
+          <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+        </span>
+        <span class="text-lg font-semibold">EcoHuerta</span>
+      </a>
+
+      <button
+        id="themeToggle"
+        class="btn btn-ghost"
+        type="button"
+        aria-pressed="false"
+        aria-label="Toggle dark mode"
+      >
+        <i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i>
+        Theme
+      </button>
+
+    </div>
+  </nav>
+</header>
 
     <!-- =======================
          HERO
          ======================= -->
-    <section id="home" class="relative">
-      <div
-        class="absolute inset-0 -z-10 bg-gradient-to-b from-eco-50 to-surface dark:from-white/5 dark:to-surface"
-      ></div>
+   
+  <section id="home" class="relative">
+  <div
+    class="absolute inset-0 -z-10 bg-gradient-to-b from-eco-50 to-surface dark:from-white/5 dark:to-surface"
+  ></div>
 
+  <div
+    class="max-w-screen-xl mx-auto px-4 sm:px-6 py-16 sm:py-24 grid lg:grid-cols-2 gap-10 items-center"
+  >
+
+    <div class="card lg:order-1">
       <div
-        class="max-w-screen-xl mx-auto px-4 sm:px-6 py-16 sm:py-24 grid lg:grid-cols-2 gap-10 items-center"
+        class="aspect-video w-full rounded-lg bg-gradient-to-br from-eco-100 to-eco-50 dark:from-white/10 dark:to-white/5 grid place-items-center"
       >
-        <div>
-          <h1 class="text-4xl sm:text-5xl font-bold leading-tight">
-            Grow smarter.
-            <span class="text-eco-700 dark:text-eco-200"
-              >Grow sustainable.</span
-            >
-          </h1>
-          <p class="mt-4 text-lg text-ink-weak">
-            Learn sustainable crops, seasons, and best practices with a
-            design-first approach built on Tailwind CSS utilities.
-          </p>
-
-          <div class="mt-8 flex flex-wrap gap-3">
-            <a href="#crops" class="btn btn-primary">
-              <i class="fa-solid fa-leaf" aria-hidden="true"></i>
-              Explore crops
-            </a>
-            <a href="#subscribe" class="btn btn-secondary">
-              <i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i>
-              Subscribe
-            </a>
-          </div>
-
-          <!-- Quick trust badges -->
-          <div
-            class="mt-6 flex flex-wrap items-center gap-3 text-sm text-ink-weak"
-          >
-            <span class="inline-flex items-center gap-2"
-              ><i class="fa-solid fa-droplet icon-on-soft"></i> Water-wise
-              tips</span
-            >
-            <span class="inline-flex items-center gap-2"
-              ><i class="fa-solid fa-sun icon-on-soft"></i> Seasonal
-              planning</span
-            >
-            <span class="inline-flex items-center gap-2"
-              ><i class="fa-solid fa-seedling icon-on-soft"></i> Organic
-              practices</span
-            >
-          </div>
-        </div>
-
-        <div class="card">
-          <div
-            class="aspect-video w-full rounded-lg bg-gradient-to-br from-eco-100 to-eco-50 dark:from-white/10 dark:to-white/5 grid place-items-center"
-          >
-            <i
-              class="fa-solid fa-tractor text-5xl icon-on-soft"
-              aria-hidden="true"
-            ></i>
-          </div>
-          <p class="mt-4 text-sm text-ink-weak">
-            This demo page is built with Tailwind v4 Play CDN to explain
-            utility-first: spacing, grid, colors, states, and dark mode.
-          </p>
-        </div>
+        <i
+          class="fa-solid fa-tractor text-5xl icon-on-soft"
+          aria-hidden="true"
+        ></i>
       </div>
-    </section>
 
-    <!-- =======================
-         CROPS GRID
-         ======================= -->
+      <p class="mt-4 text-sm text-ink-weak">
+        This demo page is built with Tailwind v4 Play CDN to explain
+        utility-first: spacing, grid, colors, states, and dark mode.
+      </p>
+    </div>
+
+    
+    <div class="lg:order-2">
+      <h1 class="text-4xl sm:text-5xl font-bold leading-tight">
+        Grow smarter.
+        <span class="text-eco-700 dark:text-eco-200">
+          Grow sustainable.
+        </span>
+      </h1>
+
+      <p class="mt-4 text-lg text-ink-weak">
+        Learn sustainable crops, seasons, and best practices with a
+        design-first approach built on Tailwind CSS utilities.
+      </p>
+
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#crops" class="btn btn-primary">
+          <i class="fa-solid fa-leaf" aria-hidden="true"></i>
+          Explore crops
+        </a>
+
+        <a href="#subscribe" class="btn btn-secondary">
+          <i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i>
+          Subscribe
+        </a>
+      </div>
+
+      <div
+        class="mt-6 flex flex-wrap items-center gap-3 text-sm text-ink-weak"
+      >
+        <span class="inline-flex items-center gap-2">
+          <i class="fa-solid fa-droplet icon-on-soft"></i>
+          Water-wise tips
+        </span>
+
+        <span class="inline-flex items-center gap-2">
+          <i class="fa-solid fa-sun icon-on-soft"></i>
+          Seasonal planning
+        </span>
+
+        <span class="inline-flex items-center gap-2">
+          <i class="fa-solid fa-seedling icon-on-soft"></i>
+          Organic practices
+        </span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    
     <section id="crops" class="max-w-screen-xl mx-auto px-4 sm:px-6 py-16">
       <div class="flex items-end justify-between gap-4">
         <h2 class="section-title">Featured crops</h2>
@@ -267,8 +278,7 @@
       <div
         class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 3xl:grid-cols-4 gap-6"
       >
-        <!-- Reusable crop card -->
-        <!-- Tomato -->
+     
         <article class="card card-hover">
           <img
             src="https://images.unsplash.com/photo-1561136594-7f68413baa99?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470"
@@ -289,7 +299,7 @@
           </div>
         </article>
 
-        <!-- Lettuce -->
+      
         <article class="card card-hover">
           <img
             src="https://images.unsplash.com/photo-1519897831810-a9a01aceccd1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1331"
@@ -309,7 +319,7 @@
           </div>
         </article>
 
-        <!-- Carrot -->
+      
         <article class="card card-hover">
           <img
             src="https://images.unsplash.com/photo-1633380110125-f6e685676160?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1471"
@@ -331,7 +341,7 @@
           </div>
         </article>
 
-        <!-- Potato -->
+    
         <article class="card card-hover">
           <img
             src="https://images.unsplash.com/photo-1561635741-c416a5193b6e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470"
@@ -353,7 +363,7 @@
           </div>
         </article>
 
-        <!-- Corn -->
+        
         <article class="card card-hover">
           <img
             src="https://images.unsplash.com/photo-1634467524884-897d0af5e104?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470"
@@ -375,7 +385,7 @@
           </div>
         </article>
 
-        <!-- Strawberry -->
+     
         <article class="card card-hover">
           <img
             src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?q=80&w=1200&auto=format&fit=crop"
