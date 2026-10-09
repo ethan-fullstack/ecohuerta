@@ -666,6 +666,14 @@
 
       // Current year in footer
       document.getElementById("year").textContent = new Date().getFullYear();
+
+      const camponame = document.getElementById("name");
+
+if (camponame) {
+    camponame.addEventListener("input", function () {
+        this.value = this.value.replace(/[0-9]/g, "");
+    });
+}
     </script>
   </body>
 </html>
