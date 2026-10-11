@@ -323,3 +323,5 @@ Este código ejemplifica varios principios de arquitectura de software aplicados
 **Progressive enhancement**: El sitio funciona sin JavaScript. JavaScript agrega mejoras pero no es requerido para funcionalidad core. Este enfoque maximiza compatibilidad y resiliencia.
 
 **Accesibilidad como ciudadano de primera clase**: Accesibilidad no es un añadido posterior sino una consideración en cada decisión de implementación. HTML semántico, atributos ARIA
+
+Aporte por Estefania Cuadrado - Ficha 3478076
