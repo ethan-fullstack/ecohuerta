@@ -1,5 +1,7 @@
 # Guía Técnica: Arquitectura Web Moderna con Tailwind CSS v4
 
+EcoHuerta es un sitio web educativo enfocado en la agricultura sostenible. Presenta información sobre cultivos y prácticas de cultivo mediante una interfaz responsiva desarrollada con HTML, CSS y Tailwind CSS.
+
 ## Introducción al Proyecto
 
 Este documento analiza la arquitectura de un sitio web educativo llamado EcoHuerta, construido con Tailwind CSS versión 4. El proyecto funciona como un sitio funcional sobre agricultura sostenible y simultáneamente como material de aprendizaje para patrones modernos de desarrollo web. A través de este análisis, se explorarán conceptos fundamentales de desarrollo frontend, accesibilidad web, diseño responsivo y sistemas de diseño escalables.
