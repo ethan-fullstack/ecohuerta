@@ -10,7 +10,7 @@ Antes de analizar el código específico, es importante comprender el cambio fun
 
 La versión 4 introduce el Play CDN, una aproximación radicalmente diferente. Ahora es posible incluir Tailwind mediante una simple etiqueta script y escribir configuraciones personalizadas directamente en CSS mediante el atributo `type="text/tailwindcss"`. Esta arquitectura elimina la barrera de entrada del proceso de compilación, permitiendo prototipado rápido y sitios estáticos sin infraestructura compleja.
 
-El Play CDN funciona procesando el CSS personalizado en el navegador del usuario. Cuando la página carga, el script de Tailwind escanea el HTML, identifica las clases de utilidad usadas, genera el CSS correspondiente y lo inyecta dinámicamente. Esta aproximación tiene implicaciones importantes para el rendimiento y la arquitectura del proyecto.
+El Play CDN funciona procesando el CSS personalizado en el navegador del usuario. Cuando la página carga, el script de Tailwind escanea el HTML.
 
 ## Estructura Fundamental del Documento
 
