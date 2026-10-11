@@ -322,4 +322,12 @@ Este código ejemplifica varios principios de arquitectura de software aplicados
 
 **Progressive enhancement**: El sitio funciona sin JavaScript. JavaScript agrega mejoras pero no es requerido para funcionalidad core. Este enfoque maximiza compatibilidad y resiliencia.
 
-**Accesibilidad como ciudadano de primera clase**: Accesibilidad no es un añadido posterior sino una consideración en cada decisión de implementación. HTML semántico, atributos ARIA
+**Accesibilidad como ciudadano de primera clase**: Accesibilidad no es un añadido posterior sino una consideración en cada decisión de implementación. HTML semántico, atributos ARIA.
+
+## Colaboradores
+
+- *Nombre:* Maicol Andrés Sampayo Peinado
+- *Usuario de GitHub:* Maicol67
+- *Programa:* Análisis y Desarrollo de Software (ADSO), ficha 3478076
+- *Aporte:* mejora de accesibilidad (iconos decorativos) y validación del campo email
+- *Flujo aplicado:* fork, clone, rama, commits, push y Pull Request
