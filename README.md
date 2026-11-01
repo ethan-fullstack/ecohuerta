@@ -116,7 +116,7 @@ Cada utilidad aplicada tiene significado específico. `inline-flex` convierte el
 
 Las utilidades `outline-none focus-visible:ring-2 focus-visible:ring-offset-2` implementan un patrón de accesibilidad moderno. Tradicionalmente, los desarrolladores removían el outline del navegador con `outline: none` porque se consideraba visualmente no atractivo, pero esto destruía la accesibilidad para usuarios de teclado que dependen de indicadores visuales de focus.
 
-La pseudo-clase `:focus-visible` resuelve este dilema. Esta selector solo se activa cuando el navegador determina que el indicador de focus debe ser visible, típicamente durante navegación por teclado pero no durante clics de mouse. Esto permite remover el outline por defecto (`outline-none`) y reemplazarlo con un ring personalizado que solo aparece cuando es necesario.
+La pseudo-clase `:focus-visible` resuelve este dilema. Este selector solo se activa cuando el navegador determina que el indicador de focus debe ser visible, típicamente durante navegación por teclado pero no durante clics de mouse. Esto permite remover el outline por defecto (`outline-none`) y reemplazarlo con un ring personalizado que solo aparece cuando es necesario.
 
 El `ring-offset` crea un espacio entre el elemento y el ring, mejorando la visibilidad del indicador particularmente en botones con fondos coloridos. Sin el offset, el ring puede mezclarse visualmente con el fondo del botón.
 
